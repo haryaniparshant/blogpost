@@ -227,3 +227,19 @@
     transform: rotate(0deg);
   }
 }
+.mainnav ul {
+  display: flex;
+  justify-content:  center;
+  margin-top: 50;
+}
+
+.mainnav ul li{
+  margin: 24px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.blog{
+  display: flex;
+  justify-content: center;
+}
