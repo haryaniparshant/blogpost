@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,10 +19,10 @@ export default function Home() {
       {/* <Script src='sc.js' strategy='lazyOnload'></Script> */}
       <nav className={styles.mainnav}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
       <div className={styles.blog}>
